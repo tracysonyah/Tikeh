@@ -1,0 +1,564 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFE4EE;
+}
+
+.wrapper {
+    margin: 45px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.header {
+    font: 1em sans-serif;
+    display: flex;
+    align-items: center;
+}
+  
+.site-name h1:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+  
+.navigation {
+    display: flex;
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
+    /* color: lightcoral; */
+    cursor: pointer;
+}
+  
+.navigation p {
+    margin-right: 20px; 
+}
+
+.btn button {
+    background-color: #F43F85;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+}
+
+.btn button:hover {
+    cursor: pointer;
+}
+
+#new-feature {
+    font-weight: bold;
+    color: #660E39;
+    background-color:#FBCBDE;
+    border-radius: 5px;
+    height: 15px;
+}
+
+.intro button {
+    padding: 0px;
+    height: 55px;
+    background-color: transparent;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-left: 510px;
+    margin-top: 50px;
+}
+
+.intro button p {
+    margin: 20px;
+}
+
+.intro button:hover {
+    cursor: pointer;
+}
+
+.writing {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#recruit {
+    font-size: clamp(2rem,1.527rem + 2.3649vw,3.75rem);
+    font-weight: 900;
+}
+
+.btn2 button {
+    background-color: #F43F85;
+    color: white;
+    padding: 15px;
+    margin-left: 600px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn2 button:hover {
+    cursor: pointer;
+    background-color: #f3649b;
+}
+
+.images img {
+    margin-left: 40px;
+    width: 150px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.down { 
+    margin-top: 60px;
+    text-align: center;
+}
+
+.down h1 {
+    color: #B71F61;
+}
+
+.down p {
+    font-weight: bold;
+    color: #660E39;
+}
+
+.before-finish {
+    margin-top: 100px;
+    background-color: #B691D4;
+    border-radius: 30px;
+    height: 350px;
+    text-align: center;
+}
+
+.before-finish h1 {
+    font-size: 50px;
+    padding: 50px;
+    color: #B5165B;
+}
+
+.before-finish p {
+    word-spacing: -1px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #660E39;
+}
+
+.btn3 button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: #F43F85;
+    width: 100px;
+    margin-left: 550px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.btn3 p {
+    cursor: pointer;
+    font-weight: 300;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.btn3 img {
+    margin-top: 50px;
+    height: 20px;
+    background: pink;
+}
+
+
+.btn3 {
+    margin-top: 30px;
+    display: flex;
+}
+
+.site-name {
+    color: #F43F85;
+}
+
+
+.above {
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below h1 {
+    text-align: center;
+}
+
+.above img {
+    padding-bottom: 30px;
+    width: 90px;
+    height: 100px;
+    margin-right: 200px;
+}
+
+.above h1 {
+    margin-left: 200px;
+    font-weight: 900;
+    color: #B5165B;
+    text-align: center;
+}
+
+.below h1 {
+    font-size: 60px;
+    color: #B5165B;
+}
+
+#recruit {
+    color: #660E39;
+}
+
+#recruit strong {
+    color: #F43F85;
+}
+
+.holder p {
+    font-weight: bolder;
+    color: #660E39;
+}
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+} */
+
+/* Custom CSS */
+/* .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-name h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a90e2;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation p {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.navigation p:hover {
+    color: #4a90e2;
+}
+
+.btn button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #3577c9;
+}
+
+.intro button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #4a90e2;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.intro button p {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.intro button:hover {
+    background-color: #4a90e2;
+}
+
+.writing {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.writing h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.writing p {
+    font-size: 18px;
+    color: #555;
+}
+
+.btn2 button {
+    padding: 13px 30px;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn2 button:hover {
+    background-color: #3577c9;
+}
+
+.holder {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+.holder p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.images img {
+    margin: 20px;
+    width: 120px;
+}
+
+.down {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.down h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.down p {
+    font-size: 18px;
+    color: #555;
+}
+
+.before-finish {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.before-finish h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.before-finish p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn3 button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn3 button:hover {
+    background-color: #3577c9;
+}
+
+.btn3 img {
+    height: 20px;
+}
+
+.above {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.above h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.below div {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.below h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.below p {
+    font-size: 18px;
+    color: #555;
+} */
+
+/* Media Queries for Responsive Design */
+/* 
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-name h1 {
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation p {
+        margin: 10px 0;
+    }
+
+    .btn button {
+        width: 100%;
+    }
+
+    .intro button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .writing h1 {
+        font-size: 30px;
+    }
+
+    .writing p {
+        font-size: 16px;
+    }
+
+    .btn2 button {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .holder {
+        padding: 20px 0;
+    }
+
+    .images img {
+        margin: 10px;
+        width: 100px;
+    }
+
+    .down h1 {
+        font-size: 30px;
+    }
+
+    .down p {
+        font-size: 16px;
+    }
+
+    .before-finish h1 {
+        font-size: 30px;
+    }
+
+    .before-finish p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn3 button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .above h1 {
+        font-size: 30px;
+    }
+
+    .below {
+        flex-wrap: wrap;
+    }
+
+    .below div {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .below h1,
+    .below p {
+        font-size: 24px;
+    }
+} */
+

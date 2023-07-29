@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Here</title>
+    <style>
+        h1{
+            text-align: center;
+            color: purple;
+        }
+
+        form {
+            text-align: center;
+            padding: 25px;
+            color: white;
+            background-color: black;
+            height: 520px;
+            border-radius: 20px;
+        }
+
+        .info {
+            padding: 3px;
+        }
+
+        .info1 {
+            padding: 5px;
+        }
+
+        button {
+            background-color: purple;
+            padding: 8px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Apply Now!!</h1>
+    <form action="">
+        <label for="name">Name:</label>
+        <input class="info" type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input class="info" type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input class="info" type="tel" id="phone" name="phone" required>
+        <br>
+        <br>
+        <br>
+
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <small>Accepted formats: PDF, DOC, DOCX</small>
+        <br>
+        <br>
+        <br>
+
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input class="info1" type="url" id="linkedin" name="linkedin">
+        <br>
+        <br>
+        <br>
+
+        <label for="portfolio">Portfolio Website:</label>
+        <input class="info1 type="url" id="portfolio" name="portfolio">
+        <br>
+        <br>
+        <br>
+
+        <button type="submit" onclick="window.location.href='list.html'" >Submit Application</button>
+    </form>
+</body>
+</html>

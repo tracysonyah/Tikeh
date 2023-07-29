@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <style>
+        /* #first {
+            margin-left: 50px;
+        }
+
+        .top-container {
+            display: flex;
+        }
+
+        #verify {
+            padding-left: 100px;
+        }
+
+        .middle-container {
+            display: flex;
+        }
+
+        .com-deets {
+            padding-left: 100px; 
+        }
+
+
+
+        input {
+            /* width: 400px; */
+            /* padding: 8px;
+        }
+
+        form {
+            margin-left: 50px;
+        } */ 
+        #first {
+            margin-left: 50px;
+        }
+
+        .top-container {
+            display: flex;
+        }
+
+        #verify {
+            padding-left: 100px;
+        }
+
+        .middle-container {
+            display: flex;
+        }
+
+        .com-deets {
+            padding-left: 100px; 
+        }
+
+        input {
+            /* width: 400px; */
+            padding: 8px;
+        }
+
+        form {
+            margin-left: 50px;
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (max-width: 600px) {
+            form {
+                margin-left: 10px;
+            }
+            #first {
+                margin-left: 10px;
+            }
+            .top-container, .middle-container {
+                flex-direction: column;
+            }
+            #verify {
+                padding-top: 20px;
+                padding-left: 0;
+            }
+            .com-deets {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first">Post a Job</h1>
+    <form action="">
+        <b>Your Email</b>
+        <br>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <div class="top-container">
+            <div>
+                <b>Password</b>
+                <br>
+                <br>
+                <input type="password" name="password" required>
+            </div>
+            <div id="verify">
+                <b>Verify Password</b>
+                <br>
+                <br>
+                <input type="password" name="password" required>
+            </div>
+        </div>
+        <!-- <br> -->
+        <small>Passwords must be at least 8 characters long.</small>
+        <h1>Job Details</h1>
+        <b>Job Title</b>
+        <br>
+        <br>
+        <input type="text" name="title" required>
+        <br>
+        <br>
+        <b>Job Location</b>
+        <br>
+        <br>
+        <input type="text" name="location" required>
+        <br>
+        <small>If location is not important, enter "Anywhere"</small>
+        <br>
+        <br>
+        <b>Job Type</b>
+        <br>
+        <br>
+        <select name="" id="">
+            <option value="full-time">Full-time</option>
+            <option value="">Freelance</option>
+            <option value="">Part-time</option>
+            <option value="">Internship</option>
+        </select>
+        <br>
+        <br>
+        <b>Job Level</b><small>(optional)</small>
+        <br>
+        <br>
+        <input type="text" name="location">
+        <br>
+        <br>
+        <b>Job Category</b>
+        <br>
+        <br>
+        <input type="text" name="category">
+        <br>
+        <br>
+        <b>How To Apply</b>
+        <br>
+        <br>
+        <input type="text" name="apply">
+        <br>
+        <small>Enter an email address if you want to receive applications through your Authentic Jobs dashboard. Or, enter an external application URL</small>
+        <br>
+        <br>
+        <h1>Company Details</h1>
+        <div class="middle-container">
+            <div>
+                <b>Company Name</b>
+                <br>
+                <br>
+                <input type="text">
+                <br>
+                <br>
+                <b>Tagline</b><small>(optional)</small>
+                <br>
+                <br>
+                <input type="text">
+            </div>
+            <div class="com-deets">
+                <b>Website</b><small>(optional)</small>
+                <br>
+                <br>
+                <input type="text">
+                <br>
+                <br>
+                <b>Twitter Username</b><small>(optional)</small>
+                <br>
+                <br>
+                <input type="text">
+            </div>
+        </div>
+        <br>
+        <br>
+        <b>Logo</b><small>(optional)</small>
+        <br>
+        <br>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <br>
+        <small>Maximum file size: 2 MB.</small>
+        <small>Recommended dimensions 150 x 150 pixels</small>
+    </form>
+</body>
+</html>
