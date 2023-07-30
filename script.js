@@ -13,10 +13,6 @@ const buttons = document.querySelectorAll('.butt button');
 
 const filterArea = document.getElementsByTagName('select');
 
-function bringJobCategory() {
-
-}
-filterArea.addEventListener('change', bringJobCategory)
 
 function displayPopup() {
     console.log('me')
@@ -53,7 +49,7 @@ function displayeighthpopup() {
 
 
 document.addEventListener('click', function(event) {
-    if(event.target !== popUp || event.target !== popUp2 || event.target !== popUp3 || event.target !== popUp4 || event.target !== popUp5 || event.target !== popUp6 || event.target !== popUp7 || event.target !== popUp8) {
+    if(event.target === popUp || event.target === popUp2 || event.target === popUp3 || event.target === popUp4 || event.target === popUp5 || event.target === popUp6 || event.target === popUp7 || event.target === popUp8) {
         console.log('no popup')
         popUp.style.display = 'none';
         popUp2.style.display = 'none';
@@ -66,9 +62,8 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// filterArea.addEventListener('change', selectJobs)
-
 searchField.addEventListener('input', function(e) {
+    
     const userSearch = e.target.value.trim().toLowerCase();
     // console.log(value);
     const jobDivsArray = Array.from(jobDivs)
@@ -92,3 +87,30 @@ searchField.addEventListener('input', function(e) {
         }
     });
 })
+
+const listOfJobs = [
+    {
+        jobTitle: "Full Stack Developer",
+        company: "Planning Center",
+        location: "Carlsbad, CA (Remote)",
+        timeServed: "Full-time",
+        description: "We build software for churches",
+        salary: "$200,000 USD",
+        requirements: [
+        "Reside in the United States",
+        "Eligible to work in the United States (we are currently unable to offer employment to those with H-1B visas)",
+        "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)",
+        "Experience in Ruby on Rails and React, with strong competency in at least one.",
+    ],
+    },
+
+    {
+        jobTitle: "Full Stack Developer",
+        company: "Planning Center",
+        description: "We’re seeking a Full Stack Developer experienced in Ruby on Rails and React. You’ll work on building out new features from start to finish, refining existing features, improving performance, and ensuring the security of our customer’s data.",
+        requirements: ["Reside in the United States", "Eligible to work in the United States (we are currently unable to offer employment to those with H-1B visas)", "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)", "Experience in Ruby on Rails and React, with strong competency in at least one."],
+        salary: "$200,000 USD",
+        role: "Full-time",
+        location: "Carlsbad, CA (Remote)"
+    },
+]

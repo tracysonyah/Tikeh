@@ -15,8 +15,8 @@
                         <img src="./Search-icon-removebg-preview.png" alt="search">
                         <input type="text" placeholder="e.g. Job title, keywords or company">
                     </div>
-                    <select placeholder="Choose a category...">
-                        <option value="" disabled selected>Category</option>
+                    <select id="categories" placeholder="Choose a category...">
+                        <!-- <option value="" disabled selected>Category</option>
                         <option value="job">Artificial Intelligence</option>
                         <option value="job">Back-end Engineering</option>
                         <option value="job">Copywriting</option>
@@ -30,12 +30,12 @@
                         <option value="job">Blockchain and Crypto</option>
                         <option value="job">Software Development</option>
                         <option value="job">Design</option>
-                        <option value="job">Other Jobs</option>
+                        <option value="job">Other Jobs</option> -->
                     </select>
                 </div>
             </div>
-            <div class="middle-body">
-                <div onclick="displayPopup()" class="div1">
+            <div id="job-listing" class="middle-body">
+                <!-- <div onclick="displayPopup()" class="div1">
                     <div class="div1-holder">
                         <div class="phase1">
                             <div class="d">
@@ -170,9 +170,9 @@
                             <b>Freelance</b>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 
-                
+<!--                 
         <div class="job-popup">
             <h1>Planning Center is Hiring a FUll Stack Developer</h1>
             <hr>
@@ -203,7 +203,7 @@
         </div>
 
         <div class="job-popup2">
-            <h3>Corvee is Hiring a Systems and CRM Administrator</h3>
+            <h1>Corvee is Hiring a Systems and CRM Administrator</h1>
             <hr>
             <br>
             <p><b>Job Title</b>: Systems and CRM Administrator</p>
@@ -284,6 +284,7 @@
                 <button onclick="window.location.href='form.html'">Apply Now!!</button>
             </div>
         </div>
+
         <div class="job-popup5">
             <h1>ORTNEC SERVICES LTD is Hiring a product Manager</h1>
             <hr>
@@ -312,7 +313,8 @@
             <div class="butt">
                 <button onclick="window.location.href='form.html'">Apply Now!!</button>
             </div>
-        </div>
+        </div> 
+ 
         <div class="job-popup6">
             <h1>Loom is Hiring a Senior Data Scientist, Marketing</h1>
             <hr>
@@ -343,6 +345,7 @@
                 <button onclick="window.location.href='form.html'">Apply Now!!</button>
             </div>
         </div>
+
         <div class="job-popup7">
             <h1>Pip Decks is hiring a Social Media and Content Marketing Specialist</h1>
             <hr>
@@ -373,6 +376,7 @@
                 <button onclick="window.location.href='form.html'">Apply Now!!</button>
             </div>
         </div>
+
         <div class="job-popup8">
             <h1>Grafana Labs is hiring an Enterprise Account Executive</h1>
             <hr>
@@ -401,9 +405,24 @@
             <div class="butt">
                 <button onclick="window.location.href='form.html'">Apply Now!!</button>
             </div>
+        </div> 
+    </div> -->
+      
+    <div class="popup" id="jobPopup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <h2 id="popupTitle"></h2>
+          <p id="popupDescription"></p>
+          <p id="popupCompanyName"></p>
+          <p id="popupLocation"></p>
+          <p id="popupRole"></p>
+          <h3>Details:</h3>
+          <div id="popupDetails"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+      
+    <!-- <script src="script.js"></script> -->
+    <script src="./js/list.js"></script>
 </body>
 </html>
 

@@ -246,6 +246,196 @@ body {
 }
 
 
+
+@media (max-width: 480px) {
+    .wrapper {
+      margin: 10px;
+    }
+
+    #new-feature {
+        font-size: 10px;
+        font-weight: bold;
+        background-color:#FBCBDE;
+        border-radius: 5px;
+    }
+    
+    .intro button {
+        display: none;
+    }
+    
+    .intro button p {
+        font-size: 10px;
+        margin: 20px;
+    }
+  
+    .navigation {
+      flex-direction: column;
+    }
+    
+    #three {
+        cursor: pointer;
+        color: #660E39;
+    }
+
+    .images img {
+        margin-left: 20px;
+        width: 60px;
+    }
+
+
+    .navigation p {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    .btn2 button {
+      display: none;
+      padding: 10px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      width: 110px;
+      font-size: 14px;
+    }
+
+    .holder p {
+        margin-top: 80px;
+        font-weight: bolder;
+    }
+  
+    .btn3 button {
+        display: none;
+    }
+
+    .btn3 p {
+        display: none;
+    }
+  
+    .below h1 {
+      font-size: 20px;
+    }
+
+    .below p {
+        font-size: 11px;
+    }
+  
+    .above img {
+      width: 100px;
+      height: 70px;
+      margin-right: 100px;
+      margin-top: 25px;
+    }
+  
+    .above h1 {
+      margin-bottom: 25px;
+      margin-left: 100px;
+      font-size: 20px;
+    }
+  
+    .down h1 {
+      font-size: 25px;
+    }
+  
+    .down p {
+      font-size: 16px;
+    }
+  
+    .before-finish {
+      height: 250px;
+    }
+  
+    .before-finish h1 {
+      font-size: 30px;
+      padding: 30px;
+    }
+  
+    .before-finish p {
+      font-size: 20px;
+    }
+  
+}
+
+@media (max-width: 810px) {
+    .site-name h1 {
+        padding-right: 20px;
+    }
+
+    .above h1 {
+      margin-bottom: 35px;
+      font-size: 30px;
+    }
+
+    .below h1 {
+        font-size: 40px;
+    }
+
+    .below p {
+        text-align: center;
+        /* font-size: 30px; */
+    }
+
+    .btn3 button {
+        display: none;
+    }
+
+    .btn3 p {
+        display: none;
+    }
+
+    .intro button {
+        display: none;
+    }
+
+    #recruit {
+        margin-top: 200px;
+    }
+
+    .btn2 button {
+        margin-left: 5px;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* * {
     box-sizing: border-box;
     margin: 0;
