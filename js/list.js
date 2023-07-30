@@ -59,8 +59,9 @@ const ListOfJobs = [
         requirements: [
         "Reside in the United States",
         "Eligible to work in the United States (we are currently unable to offer employment to those with H-1B visas)",
-        "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)",
-        "Experience in Ruby on Rails and React, with strong competency in at least one."]
+        // "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)",
+        "Experience in Ruby on Rails and React, with strong competency in at least one."
+      ]
     },
   },
 
@@ -105,8 +106,8 @@ const ListOfJobs = [
       requirements: [
         "<li>Proven work experience as a Social Media Content Creator / Manager or similar role.</li>",
         "<li>Strong graphic design, copywriting and video editing skills (and taste!).</li>",
-        "<li>Experience with influencer partnerships and collaborations is a plus.</li>",
-        "<li>Demonstrable success in managing and growing social media accounts.</li>",
+        // "<li>Experience with influencer partnerships and collaborations is a plus.</li>",
+        // "<li>Demonstrable success in managing and growing social media accounts.</li>",
     ]
     },
   },
@@ -122,7 +123,7 @@ const ListOfJobs = [
     details: {
       title: "Commerce Architect",
       company_name: "Bounteous",
-      description: "Responsible for designing and leading all ecommerce development workstreams. Responsible for engineering process, including setting best practices around delivery, code quality, unit testing and integration into CI/CD. Accountable for overall Commerce architecture and Orchestration layer design. Accountable for all API designs and documentation. Accountable for leading internal technology team meetings, eg. daily stand-ups, architecture reviews, etc.",
+      // description: "Responsible for designing and leading all ecommerce development workstreams. Responsible for engineering process, including setting best practices around delivery, code quality, unit testing and integration into CI/CD. Accountable for overall Commerce architecture and Orchestration layer design. Accountable for all API designs and documentation.",
       role: "Freelance",
       salary: "...",
       location: "Anywhere(Remote)",
@@ -141,16 +142,16 @@ const ListOfJobs = [
     details: {
       title: "Senior Data Scientist, Marketing",
       company_name: "Loom",
-      description: "As a Senior Data Scientist on the Loom data team, you'll help drive highly influential projects, related to measurement, marketing acquisition, expansion and customer engagement. You will work closely with the executive team as your role will be crucial in helping Loom drive revenue and business growth.",
+      // description: "As a Senior Data Scientist on the Loom data team, you'll help drive highly influential projects, related to measurement, marketing acquisition, expansion and customer engagement. You will work closely with the executive team as your role will be crucial in helping Loom drive revenue and business growth.",
       role: "Full-time",
       salary: "...",
       location: "Fully Remote",
       requirements: [
         "<li>5+ years of experience in an analytics role turning data into insights and recommendations</li>",
         "<li>Strong analytical and communication skills with the ability to synthesize insights into compelling stories</li>",
-        "<li>Experience with the SaaS customer lifecycle from acquisition to retention</li>",
-        "<li>A Bachelor's Degree in a quantitative field or higher</li>",
-        "<li>Proficiency at Google Analytics and other common marketing tools is a plus</li>"
+        // "<li>Experience with the SaaS customer lifecycle from acquisition to retention</li>",
+        // "<li>A Bachelor's Degree in a quantitative field or higher</li>",
+        // "<li>Proficiency at Google Analytics and other common marketing tools is a plus</li>"
     ]
     },
   },
@@ -166,8 +167,8 @@ const ListOfJobs = [
     details: {
       title: "Product Manager(B2C)",
       company_name: "ORTNEC SERVICES LTD",
-      description: "As B2C Business Owner, you will be responsible for the success of the Customer business side of the overall B2B2C organization. A strong understanding of the B2C business including Product Management, and Operations is required. You will be a key member of a highly collaborative leadership team, overseeing marketing and new product development activities. In alignment with Corporate goals and strategies, you will be responsible for achieving sustainable and profitable sales growth.",
-      role: "Full-time",
+      // description: "As B2C Business Owner, you will be responsible for the success of the Customer business side of the overall B2B2C organization. A strong understanding of the B2C business including Product Management, and Operations is required. You will be a key member of a highly collaborative leadership team, overseeing marketing and new product development activities. In alignment with Corporate goals and strategies, you will be responsible for achieving sustainable and profitable sales growth.",
+      // role: "Full-time",
       salary: "800-1000USD",
       location: "Canada or Remotely",
       requirements: [
@@ -190,15 +191,15 @@ const ListOfJobs = [
     details: {
       title: "Systems and CRM Adminidtrator",
       company_name: "Corvee",
-      description: "As a Systems and CRM Manager, you will be maintaining and delivering the most creative and robust applications on the Salesforce platform. You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs. You will work directly with Management and other departments to understand the user needs and provide detailed requirements.",
-      role: "Full-time",
+      // description: "As a Systems and CRM Manager, you will be maintaining and delivering the most creative and robust applications on the Salesforce platform. You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs. You will work directly with Management and other departments to understand the user needs and provide detailed requirements.",
+      // role: "Full-time",
       salary: "401k",
       location: "United States (Remote)",
       requirements: [
         "<li>Bachelor’s degree or equivalent experience</li>",
         "<li>4+ years of relevant hands-on Salesforce configuration experience</li>",
-        "<li>Experience with Salesforce configuration options, data model/architecture, and security mode</li>",
-        "<li>Salesforce Administrator certification or equivalent experience</li>"
+        // "<li>Experience with Salesforce configuration options, data model/architecture, and security mode</li>",
+        // "<li>Salesforce Administrator certification or equivalent experience</li>"
     ]
     },
   },
@@ -214,8 +215,8 @@ const ListOfJobs = [
     details: {
       title: "Web Developer",
       company_name: "Hope International",
-      description: "Develop and implement code to create a seamless and visually captivating user experience across our web properties. (e.g. PHP/MySQL, JavaScript, HTML, CSS, troubleshooting, debugging) Develop, and maintain the organization’s websites, ensuring an exceptional user experience with a focus on usability and captivating visual design.",
-      role: "Full-time",
+      // description: "Develop and implement code to create a seamless and visually captivating user experience across our web properties. (e.g. PHP/MySQL, JavaScript, HTML, CSS, troubleshooting, debugging) Develop, and maintain the organization’s websites, ensuring an exceptional user experience with a focus on usability and captivating visual design.",
+      // role: "Full-time",
       salary: "$50,000 – $60,000",
       location: "Lancaster, PA",
       requirements: ["Personal confession of Christian faith and commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript, with the ability to write clean, maintainable, and cross-browser-compatible code. Bachelor’s degree (computer science, web development, or related degree preferred). 2 or more years of hands-on experience in web development or related field"]
@@ -286,37 +287,37 @@ function closePopup() {
 }
 
 
-displayPopup('107');
+// displayPopup('107');
 
-// function displayCategories() {
-//   categories.forEach((category) => {
-//     categoryElement.innerHTML += `<option value="${category.slug}">${category.name}</option>`;
-//   });
-// }
-// //execute function
-// displayCategories();
+function displayCategories() {
+  categories.forEach((category) => {
+    categoryElement.innerHTML += `<option value="${category.slug}">${category.name}</option>`;
+  });
+}
+//execute function
+displayCategories();
 
 
-// // event listeners
-// categoryElement.addEventListener("change", function(e) {
-//   const categorySelected = e.target.value.trim();
+// event listeners
+categoryElement.addEventListener("change", function(e) {
+  const categorySelected = e.target.value.trim();
 
-//   if(categorySelected === 'all'){
-//     displayJobListing(ListOfJobs);
-//   }
-//   else {
-//     const filteredJobs = filterJobsByCategory(categorySelected);
-//     displayJobListing(filteredJobs)
-//   }
-//   // ListOfJobs.filter(ListOfJob => {
-//   //       return ListOfJob.category === e.target.value.trim();
-//   //   })
-//     console.log(ListOfJobs);
-// });
+  if(categorySelected === 'all'){
+    displayJobListing(ListOfJobs);
+  }
+  else {
+    const filteredJobs = filterJobsByCategory(categorySelected);
+    displayJobListing(filteredJobs)
+  }
+  // ListOfJobs.filter(ListOfJob => {
+  //       return ListOfJob.category === e.target.value.trim();
+  //   })
+    console.log(ListOfJobs);
+});
 
-// function filterJobsByCategory(category){
-//   return ListOfJobs.filter(job => job.category === category);
-// }
+function filterJobsByCategory(category){
+  return ListOfJobs.filter(job => job.category === category);
+}
 
 
 //add functionality to the search field
