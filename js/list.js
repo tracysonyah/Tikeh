@@ -232,7 +232,7 @@ function displayJobListing() {
         <div class="div1-holder">
             <div class="phase1">
                 <div class="d">
-                <img src="./689822032.webp" alt="img">
+                <img id="logo" src="./deel-icon-300-removebg-preview.png" alt="img">
                 </div>
                 <div class="company-info">
                     <h1>${ListOfJob.title}</h1>
@@ -275,7 +275,7 @@ function displayPopup(id) {
   const popup = document.getElementById("jobPopup");
   popup.style.display = "block";
 }
-displayPopup("107");
+displayPopup('107');
 
 
 
