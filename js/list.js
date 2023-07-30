@@ -228,7 +228,7 @@ function displayJobListing() {
   jobListingElement.innerHTML = "";
   ListOfJobs.forEach((ListOfJob) => {
     jobListingElement.innerHTML += `
-        <div id="${ListOfJob.id}" onclick="displayPopup()" class="div1">
+        <div id="${ListOfJob.id}" onclick="displayPopup('${ListOfJob.id}')" class="div1">
         <div class="div1-holder">
             <div class="phase1">
                 <div class="d">
@@ -249,7 +249,8 @@ function displayJobListing() {
   });
 }
 // execute function
-// displayJobListing();
+displayJobListing();
+
 
 
 function displayPopup(id) {
@@ -275,7 +276,7 @@ function displayPopup(id) {
   const popup = document.getElementById("jobPopup");
   popup.style.display = "block";
 }
-displayPopup('107');
+
 
 
 
@@ -285,7 +286,7 @@ function closePopup() {
 }
 
 
-
+displayPopup('107');
 
 // function displayCategories() {
 //   categories.forEach((category) => {
@@ -355,29 +356,3 @@ searchField.addEventListener('input', function(e) {
     }
   })
 });
-
-// //display popup
-// function displayPopup(jobId) {
-//   const job = ListOfJobs.find(job => job.id === jobId);
-//   if(!job) {
-//     return;
-//   }
-//   //fill popup with details
-//   const popupTitle = document.getElementById('title');
-//   const popupDescription = document.getElementById('description');
-
-//   popupTitle.textContent = job.title;
-//   popupDescription.textContent = job.details.description;
-
-//   //display popup
-//   const popupElement = document.getElementById('popup');
-//   console.log('come')
-//   popupElement.style.display = 'block';
-
-// }
-// displayPopup()
-
-// //create a function to hide popup
-// function hidePopup() {
-//   popupElement.style.display = 'none';
-// }
