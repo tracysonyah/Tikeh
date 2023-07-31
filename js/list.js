@@ -1,4 +1,3 @@
-// html elements
 const categoryElement = document.getElementById("categories");
 const jobListingElement = document.getElementById("job-listing");
 const searchField = document.querySelector('.search input');
