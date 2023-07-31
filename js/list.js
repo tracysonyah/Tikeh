@@ -127,7 +127,7 @@ const ListOfJobs = [
       role: "Freelance",
       salary: "...",
       location: "Anywhere(Remote)",
-      requirements: ["We are seeking a Architect with a deep background in Commerce to join our growing team in the Consumer Business Unit with a focus on CPG, Retail and Travel and Hospitality industries. As an Architect you will be a client partner who builds consensus around end-to-end architecture (including dependencies and phasing), drives technical solutions, and oversees all technical delivery workstreams."]
+      requirements: ["We are seeking a Architect with a deep background in Commerce to join our growing team in the Consumer Business Unit with a focus on CPG, Retail and Travel and Hospitality industries. As an Architect you will be a client partner who builds consensus around end-to-end architecture (including dependencies and phasing)."]
     },
   },
 
@@ -147,8 +147,8 @@ const ListOfJobs = [
       salary: "...",
       location: "Fully Remote",
       requirements: [
-        "<li>5+ years of experience in an analytics role turning data into insights and recommendations</li>",
-        "<li>Strong analytical and communication skills with the ability to synthesize insights into compelling stories</li>",
+        "<li>5+ years of experience in turning data into insights and recommendations</li>",
+        "<li>Strong communication skills with the ability to synthesize insights into compelling stories</li>",
         // "<li>Experience with the SaaS customer lifecycle from acquisition to retention</li>",
         // "<li>A Bachelor's Degree in a quantitative field or higher</li>",
         // "<li>Proficiency at Google Analytics and other common marketing tools is a plus</li>"
@@ -174,8 +174,8 @@ const ListOfJobs = [
       requirements: [
         "<li>Bachelor's Degree in Data Analytics/Mathematics, Finance, Economics or Marketing</li>",
         "<li>A track record for delivering consistent results and business growth</li>",
-        "<li>Excellent business acumen, communication and analytic skills</li>",
-        "<li>Strong analytical skills, driven by metrics not emotions</li>"
+        // "<li>Excellent business acumen, communication and analytic skills</li>",
+        // "<li>Strong analytical skills, driven by metrics not emotions</li>"
     ]
     },
   },
@@ -219,7 +219,7 @@ const ListOfJobs = [
       // role: "Full-time",
       salary: "$50,000 – $60,000",
       location: "Lancaster, PA",
-      requirements: ["Personal confession of Christian faith and commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript, with the ability to write clean, maintainable, and cross-browser-compatible code. Bachelor’s degree (computer science, web development, or related degree preferred). 2 or more years of hands-on experience in web development or related field"]
+      requirements: ["Personal confession of Christian faith and commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript, with the ability to write clean, maintainable, and cross-browser-compatible code. Bachelor’s degree (computer science, web development, or related degree preferred)."]
     },
   },
 ];
