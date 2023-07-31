@@ -249,6 +249,7 @@ body {
 }
 
 .ri-menu-line {
+    cursor: pointer;
     display: none;
 }
 
@@ -276,7 +277,12 @@ body {
     }
   
     .toggleNav {
-        display: block;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        color: #660E39;
+        /* display: block; */
     }
 
     
@@ -426,7 +432,7 @@ body {
     }
 
     #recruit {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .btn2 button {
