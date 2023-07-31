@@ -391,3 +391,9 @@ body {
         margin-left: 5px;
     }
 }
+
+/* @media (max-width: 320px) {
+    .images img {
+        width: 200px;
+    }
+} */
