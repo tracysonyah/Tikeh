@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #FFE4EE;
+    background-color:  #FBCBDE;
 }
 
 .wrapper {
@@ -15,10 +15,18 @@ body {
 
 
 .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 1px 1px;
+    padding-left: 10px;
+    padding-right: 10px;
     font: 1em sans-serif;
-    display: flex;
     align-items: center;
 }
 
@@ -43,6 +51,7 @@ body {
 }
 
 #one:hover, #two:hover, #three:hover, #four:hover, #five:hover {
+    color: #B5165B;
     cursor: pointer;
 }
   
@@ -73,17 +82,17 @@ body {
 
 .intro button {
     padding: 0px;
-    height: 55px;
+    height: 50px;
     background-color: transparent;
     display: flex;
     border-radius: 20px;
     border: 1px solid;
-    margin-left: 500px;
-    margin-top: 50px;
+    margin-left: 470px;
+    margin-top: 200px;
 }
 
 .intro button p {
-    margin: 20px;
+    margin: 16px;
 }
 
 .intro button:hover {
@@ -255,17 +264,31 @@ body {
 
 @media (max-width: 480px) {
     .header {
-        padding-right: 30px;
-        height: 60px;
+        /* padding-right: 30px; */
+        height: 70px;
         background-color: #660E39;
         position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
-    body {
-        background-color: #FFE4EE;
+    /* .site-name h1 {
+        left: 400px;
+    } */
+
+    .btnph button {
+        cursor: pointer;
+        background-color: #F43F85;
+        color: white;
+        padding: 13px;
+        border-radius: 10px;
+        border: none;
+        width: 100px;
+    }
+
+    .btn button {
+        display: none;
     }
 
     .ri-menu-line {
@@ -409,7 +432,7 @@ body {
 
     .site-name h1 {
         color: white;
-        margin-left: 25px;
+        margin-left: 180px;
     }
 
     .above h1 {
