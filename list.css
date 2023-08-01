@@ -2,12 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: #FFE5EE;
     color: #D7256D;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -377,7 +377,7 @@ select {
       }
     
       .popup-content {
-        height: 98%;
+        height: 986%;
         width: 90%;
         position: absolute;
         top: 50%;
