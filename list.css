@@ -196,90 +196,6 @@ select {
     width: 50px;
 }
 
-/* .div6 {
-    padding: 20px;
-    border: 1px solid grey;
-    border-left: 4px solid grey;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.div6:hover {
-    cursor: pointer;
-}
-
-.div6-holder {
-    display: flex; 
-    justify-content: space-between; 
-}
-
-.phase12 {
-    display: flex;
-}
-
-.carrot img {
-    padding-top: 10px;
-    height: 60px;
-    width: 50px;
-} */
-
-/* .div7 {
-    padding: 20px;
-    border: 1px solid grey;
-    border-left: 4px solid grey;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.div7:hover {
-    cursor: pointer;
-}
-
-.div7-holder {
-    display: flex; 
-    justify-content: space-between; 
-}
-
-.phase14 {
-    display: flex;
-}
-
-.sunshell img {
-    padding-top: 10px;
-    height: 60px;
-    width: 50px;
-}
-
-.div8 {
-    padding: 20px;
-    border: 1px solid grey;
-    border-left: 4px solid grey;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.div8:hover {
-    cursor: pointer;
-}
-
-.div8-holder {
-    display: flex; 
-    justify-content: space-between; 
-}
-
-.phase16 {
-    display: flex;
-}
-
-.building img {
-    padding-top: 10px;
-    height: 60px;
-    width: 50px;
-} */
-
-/*  */
-
-
 .butt button {
     margin: 20px;
     padding: 10px;
@@ -340,7 +256,7 @@ select {
     .search input[type='text'] {
         border: none;
         background-color: transparent;
-        width: 310px;
+        width: 290px;
         padding: 5px;
         font-size: 16px;
     }
@@ -362,7 +278,7 @@ select {
 
     select {
         border: 2px solid #D7256D;
-        width: 318px;
+        width: 300px;
         margin-top: 10px;
     }
 

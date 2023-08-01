@@ -258,6 +258,7 @@ body {
 @media (max-width: 480px) {
     .ri-menu-line {
         color: #B5165B;
+        display: block;
     }
 
     #recruit {
@@ -272,23 +273,12 @@ body {
         display: none;
     }
 
-    .ri-menu-line {
+    .toggleNav {
         display: block;
     }
-  
-    .toggleNav {
-        cursor: pointer;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 30px;
-        color: #660E39;
-        /* display: block; */
-    }
-
-    
 
     .wrapper {
-      margin: 10px;
+      margin: 15px;
     }
 
     #new-feature {
@@ -306,10 +296,6 @@ body {
         font-size: 10px;
         margin: 20px;
     }
-  
-    .navigation {
-      flex-direction: column;
-    }
     
     #three {
         cursor: pointer;
@@ -319,6 +305,7 @@ body {
     .images img {
         margin-left: 20px;
         width: 60px;
+        display: none;
     }
 
 
@@ -339,6 +326,7 @@ body {
     .holder p {
         margin-top: 80px;
         font-weight: bolder;
+        display: none;
     }
   
     .btn3 button {
@@ -388,19 +376,20 @@ body {
     }
   
     .before-finish p {
+        padding: 15px;
       font-size: 20px;
     }
-
 }
 
 @media (max-width: 810px) {
-    /* .images img {
-        display: grid;
-        grid-template-columns: repeat(1fr 1fr 1fr);
-        margin-left: 40px;
-        width: 50px;
-    } */
+    .ri-menu-line {
+        color: #B5165B;
+        display: block;
+    }
 
+    .images img {
+        display: none;
+    }
 
     .site-name h1 {
         padding-right: 20px;
@@ -432,7 +421,7 @@ body {
     }
 
     #recruit {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .btn2 button {
