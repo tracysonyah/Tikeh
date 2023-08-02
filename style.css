@@ -17,17 +17,15 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    font: 1em sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-}
-  
-.header {
-    font: 1em sans-serif;
-    display: flex;
-    align-items: center;
+    margin-bottom: 40px;
 }
   
 .site-name h1:hover {
@@ -80,7 +78,7 @@ body {
     display: flex;
     border-radius: 20px;
     border: 1px solid;
-    margin-left: 510px;
+    margin-left: 500px;
     margin-top: 50px;
 }
 
@@ -256,7 +254,22 @@ body {
 
 
 @media (max-width: 480px) {
+    .header {
+        padding-right: 30px;
+        height: 60px;
+        background-color: #660E39;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    body {
+        background-color: #FFE4EE;
+    }
+
     .ri-menu-line {
+        margin-left: 10px;
         color: #B5165B;
         display: block;
     }
@@ -266,6 +279,8 @@ body {
     }
 
     .navi {
+        border-radius: 5px;
+        margin-top: 17.5pc;
         display: none;
     }
 
@@ -274,6 +289,7 @@ body {
     }
 
     .toggleNav {
+        position: fixed;
         display: block;
     }
 
@@ -383,7 +399,7 @@ body {
 
 @media (max-width: 810px) {
     .ri-menu-line {
-        color: #B5165B;
+        color: #fff;
         display: block;
     }
 
@@ -392,7 +408,8 @@ body {
     }
 
     .site-name h1 {
-        padding-right: 20px;
+        color: white;
+        margin-left: 25px;
     }
 
     .above h1 {
@@ -421,7 +438,7 @@ body {
     }
 
     #recruit {
-        margin-top: 30px;
+        margin-top: 150px;
     }
 
     .btn2 button {
