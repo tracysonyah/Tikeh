@@ -24,6 +24,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     box-shadow: 1px 1px 1px 1px;
+    /* background-color: #FBCBDE; */
     padding-left: 10px;
     padding-right: 10px;
     font: 1em sans-serif;
@@ -264,19 +265,16 @@ body {
 
 @media (max-width: 480px) {
     .header {
-        /* padding-right: 30px; */
-        height: 70px;
-        background-color: #660E39;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        /* background-color: #FBCBDE; */
+        /* box-shadow: 1px 1px 1px 1px; */
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
     }
-
-    /* .site-name h1 {
-        left: 400px;
-    } */
-
     .btnph button {
         cursor: pointer;
         background-color: #F43F85;
@@ -422,7 +420,7 @@ body {
 
 @media (max-width: 810px) {
     .ri-menu-line {
-        color: #fff;
+        color: #B5165B;
         display: block;
     }
 
@@ -431,7 +429,7 @@ body {
     }
 
     .site-name h1 {
-        color: white;
+        color: #B5165B;
         margin-left: 180px;
     }
 
