@@ -199,7 +199,8 @@ select {
 .butt button {
     margin: 20px;
     padding: 10px;
-    background-color: blueviolet;
+    background-color: #B5165B;
+    color: white;
     cursor: pointer;
     border: none;
 }

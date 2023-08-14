@@ -5,32 +5,32 @@ const searchField = document.querySelector('.search input');
 const categories = [
   {
     name: "Artificial Intelligence",
-    slug: "artificial_intelligence",
+    slug: "artificial_intelligence"
   },
 
   {
     name: "Backend Web Development",
-    slug: "backend_development",
+    slug: "backend_development"
   },
 
   {
     name: "Copywriting",
-    slug: "copywriting",
+    slug: "copywriting"
   },
 
   {
     name: "Customer Support",
-    slug: "customer_support",
+    slug: "customer_support"
   },
 
   {
     name: "Design",
-    slug: "design",
+    slug: "design"
   },
 
   {
     name: "Frontend Engineering",
-    slug: "frontend_engineering",
+    slug: "frontend_engineering"
   },
   
   {
@@ -248,7 +248,6 @@ function displayJobListing() {
         `;
   });
 }
-// execute function
 displayJobListing();
 
 

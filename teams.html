@@ -4,31 +4,397 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teams</title>
+    <style>
+        body {
+            background-color: #FBCBDE;
+        }
+
+        h1 {
+            text-align: center;
+            color: #B5165B;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .img1 {
+            width: 330px;
+            height: 150px;
+        }
+
+        .img2 {
+            width: 330px;
+            height: 150px;
+        }
+
+        .img3 {
+            width: 330px;
+            height: 150px;
+        }
+
+        .img4 {
+            width: 330px;
+            height: 150px;
+        }
+
+        .img5 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img6 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img7 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img8 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img9 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img10 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img11 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img12 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img13 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img14 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img15 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img16 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img17 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img18 {
+            margin-top: 8px;
+            margin-top: 5px;
+            width: 349px;
+            height: 150px;
+        }
+
+        .img19 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img20 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img21 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img22 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img23 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img24 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img25 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img26 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img27 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        .img28 {
+            margin-top: 8px;
+            width: 330px;
+            height: 150px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            padding-left: 3px;
+            }
+
+            .img1 {
+            width: 300px;
+            height: 150px;
+            }
+
+            .img2 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img3 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img4 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img5 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img6 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img7 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img8 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img9 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img10 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img11 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img12 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img13 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img14 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img15 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img16 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img17 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img18 {
+            margin-top: 8px;
+            margin-top: 5px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img19 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img20 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img21 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img22 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img23 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img24 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img25 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img26 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img27 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+            .img28 {
+            margin-top: 8px;
+            width: 300px;
+            height: 150px;
+            }
+
+        }
+    </style>
 </head>
 <body>
+    <h1>Worldwide Teams</h1>
     <div class="wrapper">
-        <img src="./img1.jpeg" alt="img">
-        <img src="./img2.jpeg" alt="img">
-        <img src="./img3.jpeg" alt="img">
-        <img src="./img4.jpeg" alt="img">
-        <img src="./img5.jpeg" alt="img">
-        <img src="./img6.jpeg" alt="img">
-        <img src="./img7.jpeg" alt="img">
-        <img src="./img8.jpeg" alt="img">
-        <img src="./img9.jpeg" alt="img">
-        <img src="./img10.jpeg" alt="img">
-        <img src="./img11.jpeg" alt="img">
-        <img src="./img12.jpeg" alt="img">
-        <img src="./img13.jpeg" alt="img">
-        <img src="./img14.jpeg" alt="img">
-        <img src="./img15.jpeg" alt="img">
-        <img src="./img16.jpeg" alt="img">
-        <img src="./img17.jpeg" alt="img">
-        <img src="./img18.jpeg" alt="img">
-        <img src="./img19.jpeg" alt="img">
-        <img src="./img20.jpeg" alt="img">
-        <img src="./img21.jpeg" alt="img">
-        <img src="./img22.jpeg" alt="img">
+        <img class="img1" src="./img1.jpeg" alt="img">
+        <img class="img2" src="./img2.jpeg" alt="img">
+        <img class="img3" src="./img3.jpeg" alt="img">
+        <img class="img4" src="./img4.jpeg" alt="img">
+        <img class="img5" src="./img5.jpeg" alt="img">
+        <img class="img6" src="./img6.jpeg" alt="img">
+        <img class="img7" src="./img7.jpeg" alt="img">
+        <img class="img8" src="./img8.jpeg" alt="img">
+        <img class="img9" src="./img9.jpeg" alt="img">
+        <img class="img10" src="./img10.jpeg" alt="img">
+        <img class="img11" src="./img11.jpeg" alt="img">
+        <img class="img12" src="./img12.jpeg" alt="img">
+        <img class="img13" src="./img13.jpeg" alt="img">
+        <img class="img14" src="./img14.jpeg" alt="img">
+        <img class="img15" src="./img15.jpeg" alt="img">
+        <img class="img16" src="./img16.jpeg" alt="img">
+        <img class="img17" src="./img17.jpeg" alt="img">
+        <img class="img18" src="./img18.jpeg" alt="img">
+        <img class="img19" src="./img19.jpeg" alt="img">
+        <img class="img20" src="./img20.jpeg" alt="img">
+        <img class="img21" src="./img21.jpeg" alt="img">
+        <img class="img22" src="./img22.jpeg" alt="img">
+        <img class="img23" src="./pic.webp" alt="img">
+        <img class="img24" src="./pic2.jpg" alt="img">
+        <img class="img25" src="./pic3.jpg" alt="img">
+        <img class="img26" src="./pic4.jpg" alt="img">
+        <img class="img27" src="./pic5.jpg" alt="img">
+        <img class="img28" src="./pic6.jpg" alt="img">
     </div>
 </body>
 </html>
