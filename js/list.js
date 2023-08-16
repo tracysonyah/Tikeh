@@ -296,20 +296,19 @@ function displayCategories() {
 displayCategories();
 
 
-// event listeners
+//add event listeners
 categoryElement.addEventListener("change", function(e) {
   const categorySelected = e.target.value.trim();
 
   if(categorySelected === 'all'){
-    displayJobListing(ListOfJobs);
+    displayJobListing();
+    // displayJobListing(ListOfJobs);
   }
   else {
     const filteredJobs = filterJobsByCategory(categorySelected);
     displayJobListing(filteredJobs)
   }
-  // ListOfJobs.filter(ListOfJob => {
-  //       return ListOfJob.category === e.target.value.trim();
-  //   })
+  
     console.log(ListOfJobs);
 });
 
