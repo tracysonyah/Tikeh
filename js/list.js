@@ -157,7 +157,7 @@ const ListOfJobs = [
 
   {
     id: "106",
-    title: "Product Manager(B2C)",
+    title: "Product Manager",
     description: "A person who's good with managing things(businesses for example.).",
     company_name: "ORTNEC SERVICES LTD",
     location: "Canada or Remotely",
@@ -181,7 +181,7 @@ const ListOfJobs = [
 
   {
     id: "107",
-    title: "Systems and CRM Adminidtrator",
+    title: "Systems Admin.",
     description: "You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs.",
     company_name: "Corvee",
     location: "United States (Remote)",
@@ -214,8 +214,8 @@ const ListOfJobs = [
     details: {
       title: "Web Developer",
       company_name: "Hope International",
-      // description: "Develop and implement code to create a seamless and visually captivating user experience across our web properties. (e.g. PHP/MySQL, JavaScript, HTML, CSS, troubleshooting, debugging) Develop, and maintain the organization’s websites, ensuring an exceptional user experience with a focus on usability and captivating visual design.",
-      // role: "Full-time",
+      description: "Develop and implement code to create a seamless and visually captivating user experience across our web properties. (e.g. PHP/MySQL, JavaScript, HTML, CSS, troubleshooting, debugging) Develop, and maintain the organization’s websites, ensuring an exceptional user experience with a focus on usability and captivating visual design.",
+      role: "Full-time",
       salary: "$50,000 – $60,000",
       location: "Lancaster, PA",
       requirements: ["Personal confession of Christian faith and commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript, with the ability to write clean, maintainable, and cross-browser-compatible code. Bachelor’s degree (computer science, web development, or related degree preferred)."]
@@ -255,7 +255,7 @@ displayJobListing();
 function displayPopup(id) {
   console.log("id:", id)
   const job = ListOfJobs.find((job) => job.id === id);
-  // console.log(job)
+  console.log(job)
 
   document.getElementById("popupTitle").textContent = job.title;
   document.getElementById("popupDescription").textContent = job.description;
@@ -283,9 +283,6 @@ function closePopup() {
   const popup = document.getElementById("jobPopup");
   popup.style.display = "none";
 }
-
-
-// displayPopup('107');
 
 function displayCategories() {
   categories.forEach((category) => {
@@ -315,6 +312,7 @@ categoryElement.addEventListener("change", function(e) {
 function filterJobsByCategory(category){
   return ListOfJobs.filter(job => job.category === category);
 }
+filterJobsByCategory();
 
 
 //add functionality to the search field
@@ -331,8 +329,8 @@ searchField.addEventListener('input', function(e) {
     const location = ListOfJob.location.trim().toLowerCase();
     const jobRole = ListOfJob.role.trim().toLowerCase();
 
-
     if(jobTitle.includes(userSearch) || jobDescription.includes(userSearch) || companyName.includes(userSearch) || location.includes(userSearch) || jobRole.includes(userSearch)) {
+
       jobListingElement.innerHTML += `
       <div id="${ListOfJob.id}" onclick="displayPopup()" class="div1">
       <div class="div1-holder">
