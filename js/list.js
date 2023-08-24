@@ -2,42 +2,6 @@ const categoryElement = document.getElementById("categories");
 const jobListingElement = document.getElementById("job-listing");
 const searchField = document.querySelector('.search input');
 
-const categories = [
-  {
-    name: "Artificial Intelligence",
-    slug: "artificial_intelligence"
-  },
-
-  {
-    name: "Backend Web Development",
-    slug: "backend_development"
-  },
-
-  {
-    name: "Copywriting",
-    slug: "copywriting"
-  },
-
-  {
-    name: "Customer Support",
-    slug: "customer_support"
-  },
-
-  {
-    name: "Design",
-    slug: "design"
-  },
-
-  {
-    name: "Frontend Engineering",
-    slug: "frontend_engineering"
-  },
-  
-  {
-    name: "Frontend Developer",
-    slug: "frontend-developer"
-  }
-];
 
 const ListOfJobs = [
   {
@@ -89,7 +53,7 @@ const ListOfJobs = [
 
   {
     id: "103",
-    title: "Social Media and Content Marketing Specialist",
+    title: "Social Media, Marketing Specialist",
     description: "We co-innovate with the world's most ambitious backgrounds",
     company_name: "Pip Decks",
     location: "Fully remote (with a base in Stockport, UK)",
@@ -182,7 +146,7 @@ const ListOfJobs = [
   {
     id: "107",
     title: "Systems Admin.",
-    description: "You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs.",
+    description: "Responsible for owning and executing the delivery of everything related to Salesforce that's tailored to our business needs.",
     company_name: "Corvee",
     location: "United States (Remote)",
     role: "Full-time",
@@ -195,8 +159,8 @@ const ListOfJobs = [
       salary: "401k",
       location: "United States (Remote)",
       requirements: [
-        "<li>Bachelor’s degree or equivalent experience</li>",
-        "<li>4+ years of relevant hands-on Salesforce configuration experience</li>",
+        "<oi>Bachelor’s degree or equivalent experience.</li>",
+        "<oi>4+ years of relevant hands-on Salesforce configuration experience.</li>"
         // "<li>Experience with Salesforce configuration options, data model/architecture, and security mode</li>",
         // "<li>Salesforce Administrator certification or equivalent experience</li>"
     ]
@@ -218,14 +182,15 @@ const ListOfJobs = [
       role: "Full-time",
       salary: "$50,000 – $60,000",
       location: "Lancaster, PA",
-      requirements: ["Personal confession of Christian faith and commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript, with the ability to write clean, maintainable, and cross-browser-compatible code. Bachelor’s degree (computer science, web development, or related degree preferred)."]
+      requirements: ["Personal confession of Christian faith, commitment to the mission and vision of HOPE International. Proficient knowledge of HTML5, CSS3, PHP/MySQL, and JavaScript. Bachelor’s degree (computer science, web development, or related degree preferred)."]
     },
   },
-];
+]; 
 
 
 function displayJobListing() {
   jobListingElement.innerHTML = "";
+
   ListOfJobs.forEach((ListOfJob) => {
     jobListingElement.innerHTML += `
         <div id="${ListOfJob.id}" onclick="displayPopup('${ListOfJob.id}')" class="div1">
@@ -235,7 +200,7 @@ function displayJobListing() {
                 <img id="logo" src="./deel-icon-300-removebg-preview.png" alt="img">
                 </div>
                 <div class="company-info">
-                    <h1>${ListOfJob.title}</h1>
+                    <h3>${ListOfJob.title}</h3>
                     <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
                 </div>
             </div>
@@ -249,7 +214,6 @@ function displayJobListing() {
   });
 }
 displayJobListing();
-
 
 
 function displayPopup(id) {
@@ -268,6 +232,7 @@ function displayPopup(id) {
 
   job.details.requirements.forEach((requirement) => {
     detailsList.innerHTML += "<li>" + requirement + "</li>";
+    
   });
 
   detailsList.innerHTML += "</ul>";
@@ -278,19 +243,10 @@ function displayPopup(id) {
 
 
 
-
 function closePopup() {
   const popup = document.getElementById("jobPopup");
   popup.style.display = "none";
 }
-
-function displayCategories() {
-  categories.forEach((category) => {
-    categoryElement.innerHTML += `<option value="${category.slug}">${category.name}</option>`;
-  });
-}
-//execute function
-displayCategories();
 
 
 //add event listeners
@@ -330,9 +286,10 @@ searchField.addEventListener('input', function(e) {
     const jobRole = ListOfJob.role.trim().toLowerCase();
 
     if(jobTitle.includes(userSearch) || jobDescription.includes(userSearch) || companyName.includes(userSearch) || location.includes(userSearch) || jobRole.includes(userSearch)) {
+      // displayJobListing();
 
       jobListingElement.innerHTML += `
-      <div id="${ListOfJob.id}" onclick="displayPopup()" class="div1">
+      <div id="${ListOfJob.id}" onclick="displayPopup(id)" class="div1">
       <div class="div1-holder">
           <div class="phase1">
               <div class="d">
