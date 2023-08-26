@@ -232,7 +232,7 @@ function displayPopup(id) {
 
   job.details.requirements.forEach((requirement) => {
     detailsList.innerHTML += "<li>" + requirement + "</li>";
-    
+
   });
 
   detailsList.innerHTML += "</ul>";
@@ -296,7 +296,7 @@ searchField.addEventListener('input', function(e) {
                   <img id="logo" src="./deel-icon-300.png" alt="img">
               </div>
               <div class="company-info">
-                  <h1>${ListOfJob.title}</h1>
+                  <h3>${ListOfJob.title}</h3>
                   <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
               </div>
           </div>
