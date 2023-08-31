@@ -204,16 +204,17 @@ function displayJobListing() {
                     <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
                 </div>
             </div>
-            <div class="phase2">
-                <p>${ListOfJob.location}</p>
-                <b>${ListOfJob.role}</b>
-            </div>
         </div>
     </div>
         `;
   });
 }
 displayJobListing();
+
+// {/* <div class="phase2">
+//   <p>${ListOfJob.location}</p>
+//   <b>${ListOfJob.role}</b>
+// </div> */}
 
 
 function displayPopup(id) {
@@ -253,16 +254,16 @@ function closePopup() {
 categoryElement.addEventListener("change", function(e) {
   const categorySelected = e.target.value.trim();
 
-  if(categorySelected === 'all'){
-    displayJobListing();
-    // displayJobListing(ListOfJobs);
-  }
-  else {
-    const filteredJobs = filterJobsByCategory(categorySelected);
-    displayJobListing(filteredJobs)
-  }
+  // if(categorySelected === 'all'){
+  //   displayJobListing(id);
+  //   // displayJobListing(ListOfJobs);
+  // }
+  // else {
+  //   const filteredJobs = filterJobsByCategory(categorySelected);
+  //   displayJobListing(filteredJobs)
+  // }
   
-    console.log(ListOfJobs);
+    
 });
 
 function filterJobsByCategory(category){

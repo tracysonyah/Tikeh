@@ -6,10 +6,10 @@
     <title>Post a Job</title>
     <style>
         body {
-            /* background-color: #FBCBDE; */
+            font-family: 'Poppins', sans-serif
         }
 
-        h1 {
+        /* h1 {
             color: #B5165B;
         }
 
@@ -70,54 +70,41 @@
             .com-deets {
                 padding-left: 0;
             }
-        }
+        } */
     </style>
 </head>
 <body>
     <h1 id="first">Post a Job</h1>
     <form action="">
-        <b>Your Email</b>
-        <br>
-        <br>
-        <input type="email" id="email" name="email" required>
+        <!-- <b>Your Email</b> -->
+        <!-- <br>
+        <br> -->
+        <b>Your Email</b> <input type="email" id="email" name="email" required>
         <br>
         <br>
         <div class="top-container">
             <div>
-                <b>Password</b>
-                <br>
-                <br>
-                <input type="password" name="password" required>
+                <b>Password</b> <input type="password" name="password" required>
             </div>
+            <br>
             <div id="verify">
-                <b>Verify Password</b>
-                <br>
-                <br>
-                <input type="password" name="password" required>
+                <b>Verify Password</b> <input type="password" name="password" required>
             </div>
         </div>
-        <!-- <br> -->
-        <small>Passwords must be at least 8 characters long.</small>
+        <small>Password must be at least 8 characters long.</small>
         <br>
         <br>
         <h1>Job Details</h1>
-        <b>Job Title</b>
+        <br>
+        <b>Job Title</b> <input type="text" name="title" required>
         <br>
         <br>
-        <input type="text" name="title" required>
-        <br>
-        <br>
-        <b>Job Location</b>
-        <br>
-        <br>
-        <input type="text" name="location" required>
+        <b>Job Location</b> <input type="text" name="location" required>
         <br>
         <small>If location is not important, enter "Anywhere"</small>
         <br>
         <br>
         <b>Job Type</b>
-        <br>
-        <br>
         <select name="" id="">
             <option value="full-time">Full-time</option>
             <option value="">Freelance</option>
@@ -127,22 +114,15 @@
         <br>
         <br>
         <b>Job Level</b><small>(optional)</small>
-        <br>
-        <br>
         <input type="text" name="location">
         <br>
         <br>
         <b>Job Category</b>
-        <br>
-        <br>
         <input type="text" name="category">
         <br>
         <br>
         <b>How To Apply</b>
-        <br>
-        <br>
         <input type="text" name="apply">
-        <br>
         <small>Enter an email address if you want to receive applications through your Authentic Jobs dashboard. Or, enter an external application URL</small>
         <br>
         <br>
@@ -150,30 +130,22 @@
         <div class="middle-container">
             <div>
                 <b>Company Name</b>
-                <br>
-                <br>
                 <input type="text">
                 <br>
                 <br>
                 <b>Tagline</b><small>(optional)</small>
-                <br>
-                <br>
                 <input type="text">
             </div>
+            <br>
             <div class="com-deets">
                 <b>Website</b><small>(optional)</small>
-                <br>
-                <br>
                 <input type="text">
                 <br>
                 <br>
-                <b>Twitter Username</b><small>(optional)</small>
-                <br>
-                <br>
+                <b>Twitter</b><small>(optional)</small> 
                 <input type="text">
             </div>
         </div>
-        <br>
         <br>
         <b>Logo</b><small>(optional)</small>
         <br>
@@ -185,7 +157,7 @@
         <small>Recommended dimensions 150 x 150 pixels</small>
         <br>
         <br>
-        <button type="submit" onclick="window.location.href='list.html'" >Submit Application</button>
+        <button type="submit" onclick="window.location.href='list.html'" >Post Job</button>
     </form>
 </body>
 </html>

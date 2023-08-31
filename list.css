@@ -3,8 +3,8 @@
 }
 
 body {
-    /* background-color: #FFE5EE; */
-    color: #D7256D;
+    color: #fff;
+    /* color: #D7256D; */
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif
@@ -16,6 +16,7 @@ body {
 
 .middle-head h1 {
     margin-bottom: 40px;
+    color: #D7256D;
 }
 
 .middle-body img {
@@ -26,9 +27,7 @@ body {
     width: 100%;
     display:flex;
     flex-direction: column;
-    /* border: #D7256D 2px solid; */
     background-color: #f0f0f0;
-    /* border-radius: 5px; */
     padding: 5px;
 }
 
@@ -36,13 +35,12 @@ body {
     border: none;
     background-color: transparent;
     padding: 3px;
-    /* font-size: 16px; */
 }
 
 .search img {
     width: 55px;
     position: absolute;
-    top: 20%;
+    top: 16.5%;
     right: 10px;
     transform: translateY(-50%);
     padding-right: 10px;
@@ -60,13 +58,18 @@ select {
 
 .div1 {
     padding: 15px;
-    border: 1px solid grey;
-    border-left: 10px solid grey;
+    /* border: 1px solid grey; */
+    /* border-left: 10px solid grey; */
     margin-top: 40px;
-    /* margin-bottom: 20px; */
     height: 100%;
     width: 100%;
     border-radius: 8px;
+    background-color: #D7256D;
+    /* box-shadow: rgba(0, 0, 0, 0.30) 1.95px 1.95px 2.6px;} */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all 8.5s;
+    transform: scale(0) skew(-0deg);
 }
 
 .div1:hover {

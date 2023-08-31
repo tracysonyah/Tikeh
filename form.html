@@ -6,19 +6,11 @@
     <title>Apply Here</title>
     <style>
         body {
-            /* background-color: #FBCBDE; */
+            font-family: 'Poppins', sans-serif
         }
 
         h1{
-            text-align: center;
             color: #B5165B;;
-        }
-
-        form {
-            /* padding: 25px;
-            color: black;
-            height: 520px;
-            border-radius: 20px; */
         }
 
         .info {
@@ -32,52 +24,64 @@
         }
 
         button {
-            background-color: #B5165B;;
-            padding: 8px;
-            border-radius: 10px;
+            border: none;
+            background-color: #B5165B;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            margin-bottom: px;
+            margin-bottom: 15px;
+            width: 500px;
         }
 
         @media only screen and (max-width: 600px) {
+            h1 {
+                padding-left: 20px;
+            }
+
             form {
-            padding: 25px;
-            /* color: black; */
-            height: 520px;
-            border-radius: 20px;
+                margin: 10px;
+                padding: 25px;
+                height: 590px;
+                border-radius: 20px;
+                background-color: #fff;
+                box-shadow: 2px 5px 5px 2px;
             }
 
             .info {
-            padding: 8px;
-            width: 250px;
+                padding: 8px;
+                width: 250px;
             }
 
             .info1 {
-            padding: 8px;
-            width: 250px;
+                padding: 8px;
+                width: 250px;
             }
 
             button {
-            background-color: #B5165B;;
-            padding: 8px;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-bottom: 15px;
+                border: none;
+                background-color: #B5165B;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-bottom: 15px;
+                width: 270px;
             }
         }
 
     </style>
 </head>
 <body>
-    <h1>Apply Now!!</h1>
+    <h1>Apply For Job</h1>
     <form action="">
-        <label for="name">Name:</label>
+        <label for="name">Full Name:</label>
         <input class="info" type="text" id="name" name="name" required>
         <br>
         <br>
         <br>
 
-        <label for="email">Email:</label>
+        <label for="email">Email Address:</label>
         <input class="info" type="email" id="email" name="email" required>
         <br>
         <br>
