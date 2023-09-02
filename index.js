@@ -11,7 +11,3 @@ burgerMenu.addEventListener('click', function() {
 
   console.log('hello')
 })
-
-// navigationMenu.addEventListener('click', function() {
-//   navigationMenu.style.left = '-280px';
-// })

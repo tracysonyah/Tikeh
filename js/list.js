@@ -253,23 +253,8 @@ function closePopup() {
 //add event listeners
 categoryElement.addEventListener("change", function(e) {
   const categorySelected = e.target.value.trim();
-
-  // if(categorySelected === 'all'){
-  //   displayJobListing(id);
-  //   // displayJobListing(ListOfJobs);
-  // }
-  // else {
-  //   const filteredJobs = filterJobsByCategory(categorySelected);
-  //   displayJobListing(filteredJobs)
-  // }
   
-    
 });
-
-function filterJobsByCategory(category){
-  return ListOfJobs.filter(job => job.category === category);
-}
-filterJobsByCategory();
 
 
 //add functionality to the search field
@@ -301,13 +286,13 @@ searchField.addEventListener('input', function(e) {
                   <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
               </div>
           </div>
-          <div class="phase2">
-              <p>${ListOfJob.location}</p>
-              <b>${ListOfJob.role}</b>
-          </div>
       </div>
   </div>`;
     }
   })
 });
 
+{/* <div class="phase2">
+              <p>${ListOfJob.location}</p>
+              <b>${ListOfJob.role}</b>
+          </div> */}

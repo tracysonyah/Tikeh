@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --pink: #B5165B;
+    --white: #ffffff;
+    --lightgrey: #969696;
+    --transparent: transparent;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.wrapper {
+    padding: 1rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.header h1 {
+    color: #B5165B;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header button {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: #B5165B;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    cursor: pointer;
+}
+
+.job-types {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.back-to-remote {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--pink);
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.back-to-remote svg {
+    fill: var(--lightgrey);
+    width: 25px;
+    margin: 4px 4px 0 0 ;
+}
+
+.back-to-remote p {
+    padding-top: 5px;
+    color: var(--lightgrey);
+}
+
+.job-title {
+    color: var(--pink);
+    font-size: 0.8rem;
+}
+
+
+.job-info img {
+    width: 150px;
+}
+
+.job-info-text button{
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    cursor: pointer;
+}
+
+.job-info-text p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--lightgrey);
+    margin: 0;
+    padding-block: 0.5rem;
+}
+
+.warning {
+    margin-top: 30px;
+}
+
+.job-description {
+    margin-top: 30px;
+}
+
+.job-requirements {
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-section img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.report-button {
+    margin-bottom: 20px;
+}
+
+.report-button button {
+    padding: 10px;
+    width: 280px;
+    cursor: pointer;
+    background-color: var(--transparent);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.apply-button button{
+    cursor: pointer;
+    padding: 10px;
+    width: 280px;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    color: #fff;
+}
