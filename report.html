@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        *{
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --pink: #B5165B; 
+            --white: #fff;
+            --lightpink: #ec438c;
+        }
+
+        body {
+            padding: 0;
+            margin: 1.3rem;
+        }
+
+        h1 {
+            color: var(--pink);
+        }
+
+        button {
+            padding: 6px;
+            width: 20rem;
+            background-color: var(--pink);
+            color: var(--white);
+            border: none;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: var(--lightpink);
+        }
+    </style>
+</head>
+<body>
+    <h1>Report a problem</h1>
+    <form>
+        <textarea placeholder="Help us improve..." id="" cols="29" rows="20"></textarea>
+    </form>
+    <button type="submit">Send</button>
+</body>
+</html>

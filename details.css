@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-
-
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -13,6 +10,8 @@
     --white: #ffffff;
     --lightgrey: #969696;
     --transparent: transparent;
+    --ghostwhite: ghostwhite;
+    --lightpink: #ec438c;
 }
 
 body {
@@ -33,19 +32,23 @@ body {
 }
 
 .header h1 {
-    color: #B5165B;
+    color: var(--pink);
     margin: 0;
     font-size: 1.5rem;
 }
 
 .header button {
-    background-color: #fff;
+    background-color: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    color: #B5165B;
+    color: var(--pink);
     border: 0;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     cursor: pointer;
+}
+
+.header button:hover {
+    background-color: var(--ghostwhite);
 }
 
 .job-types {
@@ -93,6 +96,10 @@ body {
     border: 0;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     cursor: pointer;
+}
+
+.job-info-text button:hover {
+    background-color: var(--lightpink);
 }
 
 .job-info-text p {
@@ -143,6 +150,10 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
+.report-button button:hover {
+    background-color: var(--ghostwhite);
+}
+
 .apply-button button{
     cursor: pointer;
     padding: 10px;
@@ -152,4 +163,8 @@ footer {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     color: #fff;
+}
+
+.apply-button button:hover {
+    background-color: #ec438c;
 }

@@ -11,7 +11,7 @@ const ListOfJobs = [
     company_name: "Planning Center",
     role: "Full-time",
     location: "Carlsbad, CA(Remote)",
-    category: "software Enginnering",
+    category: "Tech",
     details: {
         title: "Full Stack Developer",
         company_name: "Planning Center",
@@ -35,7 +35,7 @@ const ListOfJobs = [
     company_name: "Grafana Labs",
     location: " France",
     role: "Full-time",
-    category: "Account Executive",
+    category: "Business",
     details: {
       title: "Enterprise Account Executive",
       company_name: "Grafana Labs",
@@ -58,7 +58,7 @@ const ListOfJobs = [
     company_name: "Pip Decks",
     location: "Fully remote (with a base in Stockport, UK)",
     role: "Full-time",
-    category: "Social Media",
+    category: "Influencer",
     details: {
       title: "Social Media and Content Marketing Specialist",
       company_name: "Pip Decks",
@@ -96,7 +96,7 @@ const ListOfJobs = [
 
   {
     id: "105",
-    title: "Senior Data Scientist, Marketing",
+    title: "Senior Data Scientist",
     description: "As a senior data scientist, you will be responsible for controlling and manipulating the company datas.",
     company_name: "Loom",
     location: "Fully Remote",
@@ -150,7 +150,7 @@ const ListOfJobs = [
     company_name: "Corvee",
     location: "United States (Remote)",
     role: "Full-time",
-    category: "Administration",
+    category: "Business",
     details: {
       title: "Systems and CRM Adminidtrator",
       company_name: "Corvee",
@@ -174,7 +174,7 @@ const ListOfJobs = [
     company_name: "Hope International",
     location: "Lancaster, PA",
     role: "Full-time",
-    category: "Developer",
+    category: "Tech",
     details: {
       title: "Web Developer",
       company_name: "Hope International",
@@ -187,13 +187,25 @@ const ListOfJobs = [
   },
 ]; 
 
+//convert array to JSON string
+// ListOfJobsJSON = JSON.stringify(ListOfJobs);
+
+//store the JSON string in local storage using a key(trayData)
+localStorage.setItem("jobs", JSON.stringify(ListOfJobs));
+
+//get the JSON string from local storage using the same key
+// ListOfJobsJSON = localStorage.getItem("tracyData");
+
+//convert JSON string back to array of objects
+// const returnedArray = JSON.parse(ListOfJobsJSON)
+
 
 function displayJobListing() {
   jobListingElement.innerHTML = "";
 
   ListOfJobs.forEach((ListOfJob) => {
     jobListingElement.innerHTML += `
-        <div id="${ListOfJob.id}" onclick="displayPopup('${ListOfJob.id}')" class="div1">
+        <div id="${ListOfJob.id}" class="div1">
         <div class="div1-holder">
             <div class="phase1">
                 <div class="d">
@@ -202,6 +214,7 @@ function displayJobListing() {
                 <div class="company-info">
                     <h3>${ListOfJob.title}</h3>
                     <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
+                    <a href='details.html?id=${ListOfJob.id}'>See more</a>
                 </div>
             </div>
         </div>
@@ -242,8 +255,6 @@ function displayPopup(id) {
   popup.style.display = "block";
 }
 
-
-
 function closePopup() {
   const popup = document.getElementById("jobPopup");
   popup.style.display = "none";
@@ -251,9 +262,33 @@ function closePopup() {
 
 
 //add event listeners
-categoryElement.addEventListener("change", function(e) {
-  const categorySelected = e.target.value.trim();
-  
+categoryElement.addEventListener("change", function() {
+  const categorySelected = categories.value.toLowerCase();
+  jobListingElement.innerHTML = "";
+
+  ListOfJobs.forEach((ListOfJob) => {
+    const categoryOfJobs = ListOfJob.category.toLowerCase();
+
+    if(categorySelected === "all" || categoryOfJobs === categorySelected) {
+      const ListOfJobsHTML = `
+            <div id="${ListOfJob.id}" onclick="displayPopup(id)" class="div1">
+                <div class="div1-holder">
+                    <div class="phase1">
+                        <div class="d">
+                            <img id="logo" src="./deel-icon-300.png" alt="img">
+                        </div>
+                        <div class="company-info">
+                            <h3>${ListOfJob.title}</h3>
+                            <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            jobListingElement.innerHTML += ListOfJobsHTML;
+    }
+  })
+ 
+
 });
 
 
@@ -272,8 +307,6 @@ searchField.addEventListener('input', function(e) {
     const jobRole = ListOfJob.role.trim().toLowerCase();
 
     if(jobTitle.includes(userSearch) || jobDescription.includes(userSearch) || companyName.includes(userSearch) || location.includes(userSearch) || jobRole.includes(userSearch)) {
-      // displayJobListing();
-
       jobListingElement.innerHTML += `
       <div id="${ListOfJob.id}" onclick="displayPopup(id)" class="div1">
       <div class="div1-holder">
@@ -292,7 +325,7 @@ searchField.addEventListener('input', function(e) {
   })
 });
 
-{/* <div class="phase2">
-              <p>${ListOfJob.location}</p>
-              <b>${ListOfJob.role}</b>
-          </div> */}
+// {/* <div class="phase2">
+//               <p>${ListOfJob.location}</p>
+//               <b>${ListOfJob.role}</b>
+//           </div> */}
