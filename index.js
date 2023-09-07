@@ -1,5 +1,7 @@
-const burgerMenu = document.querySelector('.ri-menu-line');
+// const burgerMenu = document.querySelector('.ri-menu-line');
+const burgerMenu = document.querySelector('.hamburger')
 const navigationMenu = document.querySelector('.navi');
+
 
 burgerMenu.addEventListener('click', function() {
   navigationMenu.classList.toggle('toggleNav');
@@ -8,6 +10,5 @@ burgerMenu.addEventListener('click', function() {
   navigationMenu.style.backdropFilter = 'blur(5px)';
   navigationMenu.style.height = '400px'
   
-
-  console.log('hello')
+  console.log('hello');
 })

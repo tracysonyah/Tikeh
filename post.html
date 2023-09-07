@@ -5,159 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post a Job</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-weight: 500 ;
         }
 
-        /* h1 {
+        body {
+            height: 100vh;
+            /* background: linear-gradient(
+                135deg,
+                #6f6df4,
+                #4c46f5  
+            ); */
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px 30px;
+            box-shadow: 2px 2px 2px 2px solid black;
+            /*width: 90%;
+            min-width: 420px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+            box-shadow: 20px, 30px, 25px rgba(0, 0, 0, 0.15);
+            height: 100%; */
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
             color: #B5165B;
         }
 
-        #first {
-            margin-left: 50px;
-        }
-
-        .top-container {
-            display: flex;
-        }
-
-        #verify {
-            padding-left: 100px;
-        }
-
-        .middle-container {
-            display: flex;
-        }
-
-        .com-deets {
-            padding-left: 100px; 
-        }
-
-        input {
-            padding: 8px;
-        }
-
         form {
-            margin-left: 50px;
+            width: 100%;
+            /* position: relative; */
+            margin: 30px auto 0 auto;
+        }
+
+        .lines {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px 30px;
+            margin-bottom: 20px ;
+        }
+
+        label {
+            color: #B5165B;
+            font-size: 14px;
+        }
+
+        textarea, input {
+            width: 100%;
+            font-weight: 400;
+            padding: 8px 10px;
+            border-radius: 5px;
+            /* border: 1.2 px solid #B5165B; */
+            margin-top: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        textarea:focus, input:focus {
+            outline: none;
+            border-color: #B5165B;
         }
 
         button {
-            background-color: #B5165B;
-            padding: 8px;
-            border-radius: 10px;
             cursor: pointer;
-            margin-bottom: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: linear-gradient(
+                 130deg,
+                 #cf80a2,
+                 #B5165B
+            );
+            color: #ffffff;
+            border-radius: 3px;
         }
-
-        @media only screen and (max-width: 600px) {
-            form {
-                margin-left: 10px;
-            }
-
-            #first {
-                margin-left: 10px;
-            }
-
-            .top-container, .middle-container {
-                flex-direction: column;
-            }
-
-            #verify {
-                padding-top: 20px;
-                padding-left: 0;
-            }
-
-            .com-deets {
-                padding-left: 0;
-            }
-        } */
     </style>
 </head>
 <body>
-    <h1 id="first">Post a Job</h1>
-    <form action="">
-        <!-- <b>Your Email</b> -->
-        <!-- <br>
-        <br> -->
-        <b>Your Email</b> <input type="email" id="email" name="email" required>
-        <br>
-        <br>
-        <div class="top-container">
-            <div>
-                <b>Password</b> <input type="password" name="password" required>
+    <div class="container">
+        <h1>Post a Job</h1>
+        <form>
+            <div class="lines">
+                <div class="inlines">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="write ur name here">
+                </div>
+                <div class="inlines">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="email here">
+                </div>
             </div>
-            <br>
-            <div id="verify">
-                <b>Verify Password</b> <input type="password" name="password" required>
+            <div class="lines">
+                <div class="inlines">
+                    <label for="contact">Contact</label>
+                    <input type="text" id="contacts" placeholder="contacts here">
+                </div>
+                <div class="inlines">
+                    <label for="subject">Password</label>
+                    <input type="text" id="password" placeholder="subjects here">
+                </div>
             </div>
-        </div>
-        <small>Password must be at least 8 characters long.</small>
-        <br>
-        <br>
-        <h1>Job Details</h1>
-        <br>
-        <b>Job Title</b> <input type="text" name="title" required>
-        <br>
-        <br>
-        <b>Job Location</b> <input type="text" name="location" required>
-        <br>
-        <small>If location is not important, enter "Anywhere"</small>
-        <br>
-        <br>
-        <b>Job Type</b>
-        <select name="" id="">
-            <option value="full-time">Full-time</option>
-            <option value="">Freelance</option>
-            <option value="">Part-time</option>
-            <option value="">Internship</option>
-        </select>
-        <br>
-        <br>
-        <b>Job Level</b><small>(optional)</small>
-        <input type="text" name="location">
-        <br>
-        <br>
-        <b>Job Category</b>
-        <input type="text" name="category">
-        <br>
-        <br>
-        <b>How To Apply</b>
-        <input type="text" name="apply">
-        <small>Enter an email address if you want to receive applications through your Authentic Jobs dashboard. Or, enter an external application URL</small>
-        <br>
-        <br>
-        <h1>Company Details</h1>
-        <div class="middle-container">
-            <div>
-                <b>Company Name</b>
-                <input type="text">
-                <br>
-                <br>
-                <b>Tagline</b><small>(optional)</small>
-                <input type="text">
+            <div class="lines">
+                <div class="inlines">
+                    <label for="description">Job description</label>
+                    <textarea id="issue" rows="3" placeholder="describe the job"></textarea>
+                </div>
             </div>
-            <br>
-            <div class="com-deets">
-                <b>Website</b><small>(optional)</small>
-                <input type="text">
-                <br>
-                <br>
-                <b>Twitter</b><small>(optional)</small> 
-                <input type="text">
+            <div class="lines">
+                <div class="inlines">
+                    <label for="job title">Job Title</label>
+                    <input type="text" id="job-title" placeholder="job title">
+                </div>
+                <div div="inlines">
+                    <label for="job location">Job location</label>
+                    <input type="text" id="job-location" placeholder="job location">
+                </div>
             </div>
-        </div>
-        <br>
-        <b>Logo</b><small>(optional)</small>
-        <br>
-        <br>
-        <label for="resume">Resume:</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-        <br>
-        <small>Maximum file size: 2 MB.</small>
-        <small>Recommended dimensions 150 x 150 pixels</small>
-        <br>
-        <br>
-        <button type="submit" onclick="window.location.href='list.html'" >Post Job</button>
-    </form>
+            <div class="lines">
+                <div class="inlines">
+                    <label for="twitter">Twitter</label>
+                    <input type="text" id="twitter" placeholder="company twitter account">
+                </div>
+                <div class="inlines">
+                    <label for="category">Job category</label>
+                    <input type="text" id="category" placeholder="category">
+                </div>
+            </div>
+            <div class="lines">
+                <div class="inlines">
+                    <label for="company name">Company Name</label>
+                    <input type="text" id="com-name" placeholder="company name">
+                </div>
+                <div class="inlines">
+                    <label for="Website">Website</label>
+                    <input type="text" id="web" placeholder="website link">
+                </div>
+            </div>
+            <div class="lines">
+                <div class="inlines">
+                    <label for="job-type">Job type</label>
+                    <select name="job type" id="type">
+                        <option value="full-time">Full-time</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                </div>
+                <div class="inlines">
+                    <label for="resume">Resume</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                </div>
+            </div>
+            <button type="submit" onclick="window.location.href='list.html'">Post Job</button>
+        </form>
+    </div>
+    <script>
+        postBtn = document.querySelector('button');
+        postBtn.addEventListener('submit', function() {
+            setTimeout(function() {
+                alert('Job Posted');
+                console.log('me')
+            }, 1000);
+        })
+    </script>
 </body>
 </html>

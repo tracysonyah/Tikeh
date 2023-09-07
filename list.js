@@ -1,6 +1,8 @@
 const categoryElement = document.getElementById("categories");
 const jobListingElement = document.getElementById("job-listing");
 const searchField = document.querySelector('.search input');
+const previous = document.querySelector('.remote svg');
+
 
 
 const ListOfJobs = [
@@ -17,12 +19,12 @@ const ListOfJobs = [
         company_name: "Planning Center",
         location: "Carlsbad, CA (Remote)",
         role: "Full-time",
-        description: "We’re seeking a Full Stack Developer experienced in Ruby on Rails and React. You’ll work on building out new features from start to finish, refining existing features, improving performance, and ensuring the security of our customer’s data.",
+        description: "We’re seeking a Full Stack Developer experienced in Ruby on Rails and React. You’ll work on building out new features from start to finish, refining existing features, improving performance, and ensuring the security of our customer’s data. Have the skills and knowledge to work on all aspects of web application. Be proficient in both in both the frontend and backend aspects of web development",
         salary: "$200,000 USD",
         requirements: [
         "Reside in the United States",
         "Eligible to work in the United States (we are currently unable to offer employment to those with H-1B visas)",
-        // "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)",
+        "Be willing to travel four times each year to connect with the rest of the team (not during a pandemic)",
         "Experience in Ruby on Rails and React, with strong competency in at least one."
       ]
     },
@@ -69,8 +71,8 @@ const ListOfJobs = [
       requirements: [
         "<li>Proven work experience as a Social Media Content Creator / Manager or similar role.</li>",
         "<li>Strong graphic design, copywriting and video editing skills (and taste!).</li>",
-        // "<li>Experience with influencer partnerships and collaborations is a plus.</li>",
-        // "<li>Demonstrable success in managing and growing social media accounts.</li>",
+        "<li>Experience with influencer partnerships and collaborations is a plus.</li>",
+        "<li>Demonstrable success in managing and growing social media accounts.</li>",
     ]
     },
   },
@@ -145,7 +147,7 @@ const ListOfJobs = [
 
   {
     id: "107",
-    title: "Systems Admin.",
+    title: "Systems Administrator",
     description: "Responsible for owning and executing the delivery of everything related to Salesforce that's tailored to our business needs.",
     company_name: "Corvee",
     location: "United States (Remote)",
@@ -154,15 +156,15 @@ const ListOfJobs = [
     details: {
       title: "Systems and CRM Adminidtrator",
       company_name: "Corvee",
-      // description: "As a Systems and CRM Manager, you will be maintaining and delivering the most creative and robust applications on the Salesforce platform. You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs. You will work directly with Management and other departments to understand the user needs and provide detailed requirements.",
-      // role: "Full-time",
+      description: "As a Systems and CRM Manager, you will be maintaining and delivering the most creative and robust applications on the Salesforce platform. You will be responsible for owning and executing the delivery of everything related to Salesforce that is tailored to our business needs. You will work directly with Management and other departments to understand the user needs and provide detailed requirements.",
+      role: "Full-time",
       salary: "401k",
       location: "United States (Remote)",
       requirements: [
-        "<oi>Bachelor’s degree or equivalent experience.</li>",
-        "<oi>4+ years of relevant hands-on Salesforce configuration experience.</li>"
-        // "<li>Experience with Salesforce configuration options, data model/architecture, and security mode</li>",
-        // "<li>Salesforce Administrator certification or equivalent experience</li>"
+        "Bachelor’s degree or equivalent experience",
+        "4+ years of relevant hands-on Salesforce configuration experience",
+        "Experience with Salesforce configuration options, data model/architecture, and security mode</li>",
+        "Salesforce Administrator certification or equivalent experience"
     ]
     },
   },
@@ -187,25 +189,15 @@ const ListOfJobs = [
   },
 ]; 
 
-//convert array to JSON string
-// ListOfJobsJSON = JSON.stringify(ListOfJobs);
-
 //store the JSON string in local storage using a key(trayData)
 localStorage.setItem("jobs", JSON.stringify(ListOfJobs));
-
-//get the JSON string from local storage using the same key
-// ListOfJobsJSON = localStorage.getItem("tracyData");
-
-//convert JSON string back to array of objects
-// const returnedArray = JSON.parse(ListOfJobsJSON)
-
 
 function displayJobListing() {
   jobListingElement.innerHTML = "";
 
   ListOfJobs.forEach((ListOfJob) => {
     jobListingElement.innerHTML += `
-        <div id="${ListOfJob.id}" class="div1">
+        <div id="${ListOfJob.id}" onclick="window.location.href='details.html?id=${ListOfJob.id}'" class="div1">
         <div class="div1-holder">
             <div class="phase1">
                 <div class="d">
@@ -214,7 +206,7 @@ function displayJobListing() {
                 <div class="company-info">
                     <h3>${ListOfJob.title}</h3>
                     <b>${ListOfJob.company_name}</b> <br> <p>${ListOfJob.description}</p>
-                    <a href='details.html?id=${ListOfJob.id}'>See more</a>
+                    
                 </div>
             </div>
         </div>
@@ -222,6 +214,7 @@ function displayJobListing() {
         `;
   });
 }
+// {/* <a href='details.html?id=${ListOfJob.id}'>See more</a> */}
 displayJobListing();
 
 // {/* <div class="phase2">
@@ -287,7 +280,6 @@ categoryElement.addEventListener("change", function() {
             jobListingElement.innerHTML += ListOfJobsHTML;
     }
   })
- 
 
 });
 
@@ -324,6 +316,12 @@ searchField.addEventListener('input', function(e) {
     }
   })
 });
+
+previous.addEventListener('click', function(){
+  window.location.href="index.html";
+})
+previous.style.cursor = 'pointer';
+
 
 // {/* <div class="phase2">
 //               <p>${ListOfJob.location}</p>

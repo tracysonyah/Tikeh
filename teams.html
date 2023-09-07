@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teams</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            /* box-sizing: border-box; */
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
             background-color: #fff;
         }
@@ -15,177 +22,229 @@
         }
 
         .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
         }
 
         .img1 {
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img2 {
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img3 {
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img4 {
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img5 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img6 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img7 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img8 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img9 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img10 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img11 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img12 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img13 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img14 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img15 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img16 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img17 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img18 {
-            margin-top: 8px;
-            margin-top: 5px;
-            width: 349px;
+            width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img19 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img20 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img21 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
         }
 
         .img22 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img23 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            /* padding: 20px; */
         }
 
         .img24 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img25 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            /* padding: 20px; */
         }
 
         .img26 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            padding: 20px;
         }
 
         .img27 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            /* padding: 20px; */
         }
 
         .img28 {
-            margin-top: 8px;
             width: 330px;
             height: 150px;
+            box-shadow: 1px 1px 1px 1px;
+            border-radius: 300px;
+            height: 150px;
+            padding: 20px;
         }
 
-        @media only screen and (max-width: 480px) {
+        /* @media only screen and (max-width: 480px) {
             .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -361,40 +420,40 @@
             height: 150px;
             }
 
-        }
+        } */
     </style>
 </head>
 <body>
     <h1>Worldwide Teams</h1>
     <div class="wrapper">
-        <img class="img1" src="img1.jpg" alt="img">
-        <img class="img2" src="./img2.jpg" alt="img">
-        <img class="img3" src="./img3.jpg" alt="img">
-        <img class="img4" src="./img4.jpg" alt="img">
-        <img class="img5" src="./img5.jpg" alt="img">
-        <img class="img6" src="./img6.jpg" alt="img">
-        <img class="img7" src="./img7.jpg" alt="img">
-        <img class="img8" src="./img8.jpg" alt="img">
-        <img class="img9" src="./img9.jpg" alt="img">
-        <img class="img10" src="./img10.jpg" alt="img">
-        <img class="img11" src="./img11.jpg" alt="img">
-        <img class="img12" src="./img12.jpg" alt="img">
-        <img class="img13" src="./img13.jpg" alt="img">
-        <img class="img14" src="./img14.jpg" alt="img">
-        <img class="img15" src="./img15.jpg" alt="img">
-        <img class="img16" src="./img16.jpg" alt="img">
-        <img class="img17" src="./img17.jpg" alt="img">
-        <img class="img18" src="./img18.jpg" alt="img">
-        <img class="img19" src="./img19.jpg" alt="img">
-        <img class="img20" src="./img20.jpg" alt="img">
-        <img class="img21" src="./img21.jpg" alt="img">
-        <img class="img22" src="./img22.jpg" alt="img">
-        <img class="img23" src="./img23.jpg" alt="img">
-        <img class="img24" src="./pic2.jpg" alt="img">
-        <img class="img25" src="./pic3.jpg" alt="img">
-        <img class="img26" src="./pic4.jpg" alt="img">
-        <img class="img27" src="./pic5.jpg" alt="img">
-        <img class="img28" src="./pic6.jpg" alt="img">
+        <img class="img1" src="./img/img1.jpg" alt="img">
+        <img class="img2" src="./img/img2.jpg" alt="img">
+        <img class="img3" src="./img/img3.jpg" alt="img">
+        <img class="img4" src="./img/img4.jpg" alt="img">
+        <img class="img5" src="./img/img5.jpg" alt="img">
+        <img class="img6" src="./img/img6.jpg" alt="img">
+        <img class="img7" src="./img/img7.jpg" alt="img">
+        <img class="img8" src="./img/img8.jpg" alt="img">
+        <img class="img9" src="./img/img9.jpg" alt="img">
+        <img class="img10" src="./img/img10.jpg" alt="img">
+        <img class="img11" src="./img/img11.jpg" alt="img">
+        <img class="img12" src="./img/img12.jpg" alt="img">
+        <img class="img13" src="./img/img13.jpg" alt="img">
+        <img class="img14" src="./img/img14.jpg" alt="img">
+        <img class="img15" src="./img/img15.jpg" alt="img">
+        <img class="img16" src="./img/img16.jpg" alt="img">
+        <img class="img17" src="./img/img17.jpg" alt="img">
+        <img class="img18" src="./img/img18.jpg" alt="img">
+        <img class="img19" src="./img/img19.jpg" alt="img">
+        <img class="img20" src="./img/img20.jpg" alt="img">
+        <img class="img21" src="./img/img21.jpg" alt="img">
+        <img class="img22" src="./img/img22.jpg" alt="img">
+        <!-- <img class="img23" src="./img/img23.jpg" alt="img"> -->
+        <img class="img24" src="./img/pic2.jpg" alt="img">
+        <img class="img25" src="./img/pic3.jpg" alt="img">
+        <img class="img26" src="./img/pic4.jpg" alt="img">
+        <img class="img27" src="./img/pic5.jpg" alt="img">
+        <img class="img28" src="./img/pic6.jpg" alt="img">
     </div>
 </body>
 </html>
