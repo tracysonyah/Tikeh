@@ -477,7 +477,7 @@
 
     }
 
-    .ri-menu-line {
+    /* .ri-menu-line {
         color: #B5165B;
         display: block;
         position: fixed;
@@ -487,12 +487,12 @@
         background-color: #333;
         color: white;
         transition: left 0.3s ease; 
-    }
+    } */
 
-    .header i.ri-menu-line {
+    /* .header i.ri-menu-line {
         font-size: 30px;
         padding-left: -10%;
-    }
+    } */
 
     .header {
         height: 100px;
